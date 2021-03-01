@@ -33,7 +33,8 @@ app.post("/webhook", (req, res) => {
 // Adds support for GET requests to our webhook
 app.get("/webhook", (req, res) => {
   // Your verify token. Should be a random string.
-  let VERIFY_TOKEN = "<YOUR_VERIFY_TOKEN>";
+  let VERIFY_TOKEN =
+    "EAAF4MufSEr4BAEKXs4GmNdWYnUSsQZCfNHXccWD4XMbX3TJWkfhJOBr1lMhSBruxhpeKBfKNVHMTcza6qw9HGpeKpyTAMZCb3Ff4vGQfpBGwnTiOt5PpHZB8x08q1nf25UYPXYTIhM78EHkZCzbxWZAKYq25e0EVHGppvW6iSZCAlzmCXn65LJ";
 
   // Parse the query params
   let mode = req.query["hub.mode"];
